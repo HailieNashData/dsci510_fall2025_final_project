@@ -1,1 +1,29 @@
 
+# Formula One – Race Performance Analysis and Prediction
+
+## Introduction
+
+This project analyzes Formula 1 race performance in the 2023–2024 seasons to
+understand which factors most strongly drive successful race outcomes. We link
+qualifying, race results, pit stop strategies, and lap-by-lap timing data to:
+
+- Quantify how much **grid position** matters for the final result.
+- Identify **teams that consistently outperform their grid position**.
+- Analyze how **pit stop strategy and lap consistency** affect podium finishes.
+- Build a simple **classification model** that predicts the probability that a
+  car finishes on the **podium (P1–P3)**.
+
+The goal is to build a reproducible analytics pipeline with clean code, tests,
+and clear documentation in line with DSCI 510-style final project requirements.
+
+---
+
+## Data sources
+
+Below is a JSON-API-only data source list. No raw data is stored in this repository.
+
+| # | Name / Short Description                       | Source URL                  | Type | Format | Estimated Size |
+|---|-----------------------------------------------|-----------------------------|------|--------|----------------|
+| 1 | OpenF1 – real-time and historical F1 results, laps, pit stops | https://openf1.org | API  | JSON   | 300+ races     |
+| 2 | (Optional) F1 API – live timing & telemetry   | https://live.f1api.dev      | API  | JSON   | 300+ sessions  |
+| 3 | (Optional) Ergast via FastF1 – historical standings & metadata | https://docs.fastf1.dev/ergast.html | API | JSON/XML | 300+ records   |
